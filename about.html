@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Him</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to bottom right, #d0aaff, #ffd5ec);
+      background-attachment: fixed;
+      color: #333;
+      text-align: center;
+      animation: fadeIn 1.2s ease-in-out;
+      position: relative;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .overlay {
+      background: url('https://cdn.pixabay.com/photo/2020/04/17/12/28/cloud-5055011_1280.jpg') no-repeat center center fixed;
+      background-size: cover;
+      opacity: 0.25;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -2;
+    }
+
+    nav {
+      background: rgba(255, 255, 255, 0.3);
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(8px);
+      z-index: 2;
+    }
+
+    nav a {
+      color: #800080;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1em;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #b80080;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      margin-top: 40px;
+      color: #5d1049;
+      text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.5);
+    }
+
+    section {
+      background: rgba(255, 255, 255, 0.7);
+      margin: 40px auto;
+      padding: 40px 30px;
+      max-width: 750px;
+      border-radius: 25px;
+      box-shadow: 0 8px 30px rgba(128, 0, 128, 0.2);
+      position: relative;
+    }
+
+    section p {
+      font-size: 1.3em;
+      line-height: 1.6;
+      color: #4b004b;
+    }
+
+    img {
+      max-width: 100%;
+      width: 230px;
+      border-radius: 50%;
+      margin-top: 30px;
+      border: 5px solid #fff0f5;
+      box-shadow: 0 0 15px #ff69b4;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    .video-container {
+      margin-top: 30px;
+    }
+
+    .video-container iframe {
+      width: 100%;
+      max-width: 600px;
+      height: 340px;
+      border: 4px solid #fff0f5;
+      border-radius: 15px;
+      box-shadow: 0 0 25px #ff69b4;
+    }
+
+    .social-links {
+      margin-top: 30px;
+    }
+
+    .social-links a {
+      text-decoration: none;
+      margin: 0 12px;
+      padding: 10px 22px;
+      color: #fff;
+      background-color: #b80080;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.3s;
+      display: inline-block;
+    }
+
+    .social-links a:hover {
+      background-color: #ff69b4;
+      transform: scale(1.05);
+    }
+
+    .btn-love {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      background-color: #ffccf9;
+      color: #5d1049;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.1em;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .btn-love:hover {
+      background-color: #fce3ff;
+      transform: scale(1.08);
+    }
+
+    footer {
+      margin: 40px 0;
+      font-style: italic;
+      color: #5d1049;
+      font-size: 1.1em;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      section p {
+        font-size: 1.1em;
+      }
+
+      .social-links a {
+        display: block;
+        margin: 10px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Him</a>
+    <a href="sayang.html">Sayang</a>
+    <a href="memory.html">Memory</a>
+  </nav>
+
+  <h1>About Him 💖</h1>
+
+  <section>
+    <p>
+      He is the most caring, loving, and inspiring person I know.  
+      Every moment with him feels like a dream I never want to wake up from.  
+      He’s the calm in my storm, the light in my dark, and the smile in my heart. 💫
+    </p>
+
+    <img src="images/b3.jpg" alt="Him">
+
+
+    <div class="social-links">
+      <a href="https://www.instagram.com/izztakrm" target="_blank">Instagram</a>
+      <a href="https://www.tiktok.com/@laici465" target="_blank">TikTok</a>
+    </div>
+
+    <a href="sayang.html" class="btn-love">See Why I Love Him 💌</a>
+  </section>
+
+  <footer>He is my forever 💫</footer>
+</body>
+</html>

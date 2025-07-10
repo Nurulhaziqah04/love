@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Memory</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: url('https://images.unsplash.com/photo-1495562569060-2eec283d3391?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
+    }
+
+    nav {
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 15px;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: #ffc0cb;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2em;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-top: 40px;
+      color: #ffb6c1;
+      text-shadow: 2px 2px #000;
+    }
+
+    section.gallery {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .memory-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .memory-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #ff69b4;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 4px solid #fff0f5;
+    }
+
+    .memory-item img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px #ff1493;
+    }
+
+    .memory-item figcaption {
+      margin-top: 10px;
+      color: #ffe4e1;
+      font-size: 1em;
+      font-style: italic;
+    }
+
+    footer {
+      margin: 40px 0;
+      font-style: italic;
+      color: #ddd;
+      font-size: 1.1em;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      nav a {
+        font-size: 1em;
+        display: inline-block;
+        margin: 10px 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Him</a>
+    <a href="sayang.html">Sayang</a>
+    <a href="memory.html">Memory</a>
+  </nav>
+
+  <h1>Our Memories 📸</h1>
+
+  <section class="gallery">
+    <figure class="memory-item">
+      <img src="images/b.jpg" alt="Memory 1">
+      <figcaption>Our first shoot together 💑</figcaption>
+    </figure>
+    <figure class="memory-item">
+      <img src="images/b1.jpg" alt="Memory 2">
+      <figcaption>Your warm smile 🥰</figcaption>
+    </figure>
+    <figure class="memory-item">
+      <img src="images/b2.jpg" alt="Memory 3">
+      <figcaption>What a perfect cuople ☔</figcaption>
+    </figure>
+    <figure class="memory-item">
+      <img src="images/b3.jpg" alt="Memory 4">
+      <figcaption>Beside you i feel love 💫</figcaption>
+    </figure>
+    <figure class="memory-item">
+      <img src="images/him.jpg" alt="Him 1">
+      <figcaption>The love of my life 💖</figcaption>
+    </figure>
+    <figure class="memory-item">
+      <img src="images/him1.jpg" alt="Him 2">
+      <figcaption>Your gentle side 🐻</figcaption>
+    </figure>
+    <figure class="memory-item">
+      <img src="images/him2.jpg" alt="Him 3">
+      <figcaption>So handsome! 😍</figcaption>
+    </figure>
+    <figure class="memory-item">
+      <img src="images/him3.jpg" alt="Him 4">
+      <figcaption>That unforgettable moment 📷</figcaption>
+    </figure>
+    <figure class="memory-item">
+      <img src="images/love1.jpg" alt="Love 1">
+      <figcaption>Heartbeats in sync ❤️</figcaption>
+    </figure>
+    <figure class="memory-item">
+      <img src="images/love2.jpg" alt="Love 2">
+      <figcaption>Laughing with you 🎉</figcaption>
+    </figure>
+    <figure class="memory-item">
+      <img src="images/love3.jpg" alt="Love 3">
+      <figcaption>Forever and always 💍</figcaption>
+    </figure>
+    <figure class="memory-item">
+      <img src="images/love4.jpg" alt="Love 4">
+      <figcaption>Sunsets and cuddles 🌅</figcaption>
+    </figure>
+  </section>
+
+  <footer>These moments are forever in my heart 💞</footer>
+</body>
+</html>
+
+
